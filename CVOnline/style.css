@@ -1,0 +1,98 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  background: #012c6d;
+}
+
+/* Navegação */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background: #ddd;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Layout principal com grid */
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Coluna esquerda menor, direita maior */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Section lateral esquerda */
+#sobre_mim {
+  background: #ddd;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Article central à direita */
+.principal {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+}
+
+#formacao {
+  grid-column-start: 1;
+  grid-column-end: 12;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+#portfolio {
+  grid-column-start: 1;
+  grid-column-end: 12;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+#contato {
+  grid-column-start: 1;
+  grid-column-end: 12;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+footer {
+  color: #f9f9f9;
+  text-align: center;
+  padding: 15px;
+  background: #012c6d;
+  margin-top: 20px;
+}
